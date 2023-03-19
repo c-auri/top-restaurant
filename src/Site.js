@@ -13,6 +13,8 @@ export class Site {
     }
 
     load() {
+        document.querySelector('title').innerHTML = this.#title
+
         const body = document.querySelector('body')
 
         const header = new Header(this.#title, this.#pages)
