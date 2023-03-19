@@ -1,14 +1,14 @@
-import { getHeader } from './components/header'
-import { getFooter } from './components/footer'
-import { getHome } from './components/home'
+import { Site } from "./Site";
+import { Home } from './components/Home'
+import { Menu } from './components/Menu'
+import { Contact } from './components/Contact'
 
 (function() {
-    const body = document.querySelector('body')
-    const main = document.createElement('main')
+    const pages = [
+        new Home(),
+        new Menu(),
+        new Contact()
+    ]
 
-    body.appendChild(getHeader())
-    body.appendChild(main)
-    body.appendChild(getFooter())
-
-    main.appendChild(getHome())
-})();
+    new Site(pages).load()
+})()
