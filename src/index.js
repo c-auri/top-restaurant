@@ -26,10 +26,12 @@ import { Contact } from './components/Contact'
         },
     ]
 
+    const contactInfo = 'Feel free to contact us during our opening hours.'
+
     const pages = [
         new Home(),
         new Menu(teas),
-        new Contact()
+        new Contact(contactInfo)
     ]
 
     new Site(title, pages, copyright).load()
