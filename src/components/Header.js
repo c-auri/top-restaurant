@@ -1,7 +1,9 @@
 export class Header {
+    #title
     #pages
 
-    constructor(pages) {
+    constructor(title, pages) {
+        this.#title = title
         this.#pages = pages
     }
 
@@ -9,7 +11,7 @@ export class Header {
         const header = document.createElement('header')
 
         const heading = document.createElement('h1')
-        heading.textContent = 'Tea House TOP'
+        heading.textContent = this.#title
 
         const nav = new Navigation(this.#pages)
 

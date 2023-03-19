@@ -4,11 +4,12 @@ import { Menu } from './components/Menu'
 import { Contact } from './components/Contact'
 
 (function() {
+    const title = "Tea House TOP"
     const pages = [
         new Home(),
         new Menu(),
         new Contact()
     ]
 
-    new Site(pages).load()
+    new Site(title, pages).load()
 })()
