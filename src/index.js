@@ -7,9 +7,28 @@ import { Contact } from './components/Contact'
     const title = "Tea House TOP"
     const copyright = '&copy;&nbsp;c-auri&nbsp;2023'
 
+    const teas = [
+        {
+            "heading": "A tea you need to try",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere id metus sed elementum. Suspendisse feugiat orci vel ligula dapibus. "
+        },
+        {
+            "heading": "A tea you need to try",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere id metus sed elementum. Suspendisse feugiat orci vel ligula dapibus. "
+        },
+        {
+            "heading": "A tea you need to try",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere id metus sed elementum. Suspendisse feugiat orci vel ligula dapibus. "
+        },
+        {
+            "heading": "A tea you need to try",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere id metus sed elementum. Suspendisse feugiat orci vel ligula dapibus. "
+        },
+    ]
+
     const pages = [
         new Home(),
-        new Menu(),
+        new Menu(teas),
         new Contact()
     ]
 

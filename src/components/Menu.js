@@ -1,24 +1,10 @@
 export class Menu {
     title = "Menu"
+    #teas
 
-    #teas = [
-        {
-            "heading": "A tea you need to try",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere id metus sed elementum. Suspendisse feugiat orci vel ligula dapibus. "
-        },
-        {
-            "heading": "A tea you need to try",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere id metus sed elementum. Suspendisse feugiat orci vel ligula dapibus. "
-        },
-        {
-            "heading": "A tea you need to try",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere id metus sed elementum. Suspendisse feugiat orci vel ligula dapibus. "
-        },
-        {
-            "heading": "A tea you need to try",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere id metus sed elementum. Suspendisse feugiat orci vel ligula dapibus. "
-        },
-    ]
+    constructor(teas) {
+        this.#teas = teas
+    }
 
     render() {
         const menu = document.createElement('section')
