@@ -4,10 +4,12 @@ import { Footer } from './components/Footer'
 export class Site {
     #title
     #pages
+    #copyright
 
-    constructor(title, pages) {
+    constructor(title, pages, copyright) {
         this.#title = title
         this.#pages = pages
+        this.#copyright = copyright
     }
 
     load() {
@@ -16,7 +18,7 @@ export class Site {
         const header = new Header(this.#title, this.#pages)
         const main = document.createElement('main')
         main.appendChild(this.#pages[0].render())
-        const footer = new Footer()
+        const footer = new Footer(this.#copyright)
 
         body.appendChild(header.render())
         body.appendChild(main)

@@ -5,11 +5,13 @@ import { Contact } from './components/Contact'
 
 (function() {
     const title = "Tea House TOP"
+    const copyright = '&copy;&nbsp;c-auri&nbsp;2023'
+
     const pages = [
         new Home(),
         new Menu(),
         new Contact()
     ]
 
-    new Site(title, pages).load()
+    new Site(title, pages, copyright).load()
 })()

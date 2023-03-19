@@ -1,10 +1,16 @@
 export class Footer {
+    #copyright
+
+    constructor(copyright) {
+        this.#copyright = copyright
+    }
+
     render() {
         const footer = document.createElement('footer')
-        const copyright = document.createElement('span')
-        copyright.innerHTML = '&copy;&nbsp;c-auri&nbsp;2023'
+        const span = document.createElement('span')
+        span.innerHTML = this.#copyright
 
-        footer.appendChild(copyright)
+        footer.appendChild(span)
 
         return footer
     }
