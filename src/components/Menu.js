@@ -1,8 +1,10 @@
 export class Menu {
     title = "Menu"
+    #intro
     #teas
 
-    constructor(teas) {
+    constructor(intro, teas) {
+        this.#intro = intro
         this.#teas = teas
     }
 
@@ -12,7 +14,7 @@ export class Menu {
         const header = document.createElement('header')
         const paragraph = document.createElement('h2')
 
-        paragraph.innerHTML = 'Try our teas, they are all very good!'
+        paragraph.innerHTML = this.#intro
 
         header.appendChild(paragraph)
         menu.appendChild(header)

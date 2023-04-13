@@ -11,7 +11,7 @@ export class Contact {
         const heading = document.createElement('h2')
         const paragraph = document.createElement('p')
 
-        heading.innerHTML = 'Contact'
+        heading.innerHTML = 'Come Sip With Us'
         paragraph.innerHTML = this.#info
 
         contact.appendChild(heading)
