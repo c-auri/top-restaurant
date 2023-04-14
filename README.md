@@ -7,7 +7,7 @@ This project is intended as a lesson in ES6 modules and Webpack. The assignment 
 - [x] Create a homepage, menu and contact page using modules
 - [x] Use tabbed browsing in the navigation
 - [x] Use modules for header and footer
-- [ ] Import images and styles with webpack
+- [x] Import images and styles with webpack
 
 ## Additional Personal Challenges
 - [x] Use ESLint in combination with webpack
