@@ -14,17 +14,25 @@ export class Menu {
         document.body.classList.add('menu')
 
         const menu = document.createElement('section')
+        menu.classList.add('content--menu')
 
-        const header = document.createElement('header')
-        const paragraph = document.createElement('h2')
+        const intro = document.createElement('article')
+        intro.classList.add('content')
 
-        paragraph.innerHTML = this.#intro
+        const introHeader = document.createElement('h2')
+        introHeader.innerHTML = 'Menu'
+        intro.appendChild(introHeader)
 
-        header.appendChild(paragraph)
-        menu.appendChild(header)
+        const introText = document.createElement('p')
+        introText.innerHTML = this.#intro
+        intro.appendChild(introText)
+
+        menu.appendChild(intro)
 
         for (const tea of this.#teas) {
             const article = document.createElement('article')
+            article.classList.add('content')
+
             const h = document.createElement('h2')
             const p = document.createElement('p')
 

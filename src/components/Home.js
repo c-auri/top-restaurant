@@ -13,6 +13,8 @@ export class Home {
         document.body.classList.add('home')
 
         const home = document.createElement('section')
+        home.classList.add('content')
+        home.classList.add('content--home')
 
         const header = document.createElement('h2')
         header.textContent = 'Welcome to our tea house'

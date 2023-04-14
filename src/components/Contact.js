@@ -12,6 +12,8 @@ export class Contact {
         document.body.classList.add('contact')
 
         const contact = document.createElement('section')
+        contact.classList.add('content')
+        contact.classList.add('content--contact')
         const heading = document.createElement('h2')
         const paragraph = document.createElement('p')
 
