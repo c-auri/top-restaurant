@@ -5,11 +5,11 @@ import { Contact } from './components/Contact'
 import './style.css'
 
 (function() {
-    const title = "Tea House TOP"
+    const title = "Topper's Tea House"
 
-    const welcomeMessage = [ 
-        "Welcome to our tea house, where we celebrate the rich traditions of Chinese tea culture. Our selection of premium Oolong teas, carefully sourced from the mountains of China, are expertly brewed using the Gongfu Cha method, ensuring that every cup is infused with the full depth of flavor.", 
-        "Our knowledgeable and attentive staff are always happy to answer any questions you may have about our teas and brewing methods. So come and join us for a truly authentic tea experience, where every cup is a journey into the rich and fascinating world of tea." 
+    const welcomeMessage = [
+        "Welcome to our tea house, where we celebrate the rich traditions of Chinese tea culture. Our selection of premium Oolong teas, carefully sourced from the mountains of China, are expertly brewed using the Gongfu Cha method, ensuring that every cup is infused with the full depth of flavor.",
+        "Our knowledgeable and attentive staff are always happy to answer any questions you may have about our teas and brewing methods. So come and join us for a truly authentic tea experience, where every cup is a journey into the rich and fascinating world of tea."
     ]
 
     const menuIntro = "Our menu features a carefully curated selection of premium teas, each steeped in tradition and culture. From the delicate sweetness of green tea to the robust richness of black tea, we offer a variety of flavors to satisfy every palate. Come and explore the unique qualities of each tea, and experience the art of Chinese tea like never before."
@@ -34,8 +34,8 @@ import './style.css'
     ]
 
     const contactInfo = "We invite you to visit our tea house during our opening hours and enjoy a moment of relaxation with a cup of premium tea. Our cozy atmosphere provides the perfect setting to unwind and indulge in the art of tea. Feel free to come visit us within our opening hours."
-    
-    const copyright = '&copy;&nbsp;c-auri&nbsp;2023'
+
+    const copyright = 'Images by <a href="https://unsplash.com/@oriento">五玄土 ORIENTO</a>'
 
     const pages = [
         new Home(welcomeMessage),
