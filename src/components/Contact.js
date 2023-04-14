@@ -7,6 +7,10 @@ export class Contact {
     }
 
     render() {
+        document.body.classList.remove('menu')
+        document.body.classList.remove('home')
+        document.body.classList.add('contact')
+
         const contact = document.createElement('section')
         const heading = document.createElement('h2')
         const paragraph = document.createElement('p')

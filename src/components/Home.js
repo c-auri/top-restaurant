@@ -8,6 +8,10 @@ export class Home {
     }
 
     render() {
+        document.body.classList.remove('menu')
+        document.body.classList.remove('contact')
+        document.body.classList.add('home')
+
         const home = document.createElement('section')
 
         const header = document.createElement('h2')

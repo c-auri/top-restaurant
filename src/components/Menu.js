@@ -9,6 +9,10 @@ export class Menu {
     }
 
     render() {
+        document.body.classList.remove('menu')
+        document.body.classList.remove('contact')
+        document.body.classList.add('menu')
+
         const menu = document.createElement('section')
 
         const header = document.createElement('header')
