@@ -54,6 +54,7 @@ header {
 }
 
 nav {
+    padding-inline: 3rem;
     display: flex;
 }
 
@@ -63,7 +64,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 3rem;
     font-size: 1.5rem;
 }
 
@@ -76,6 +77,14 @@ nav li {
 
 nav li {
     cursor: pointer;
+    color: rgba(0, 0, 0, .75);
+}
+
+body.home nav li:first-child,
+body.menu nav li:nth-child(2),
+body.contact nav li:last-child {
+    color: black;
+    opacity: 1;
 }
 
 main {
